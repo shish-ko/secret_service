@@ -1,0 +1,21 @@
+@import '../../styles/variables.scss';
+.header {
+  border: $main_blue 4px solid;
+  border-radius: 64px;
+  margin: 16px 0 8px;
+  display: flex;
+  flex-direction: row;
+  padding: 24px 48px;
+  justify-content: space-between;
+  align-items: center;
+
+  &__item {
+    flex-basis: 287px;
+  }
+}
+
+.menu {
+  display: flex;
+  padding: .8rem;
+  gap: 3.2rem
+}

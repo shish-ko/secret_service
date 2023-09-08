@@ -1,0 +1,13 @@
+@import './variables.scss';
+
+.filled-item {
+  background-color: $main_blue;
+
+  &:hover {
+    background-color: darken($color: $main_blue, $amount: 3);
+  }
+} 
+button {
+  text-transform: lowercase;
+  padding: 1.4rem;
+}
