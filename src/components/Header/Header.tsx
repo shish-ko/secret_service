@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from './header.module.scss';
+import imgUrl from '../../assets/Icon-Planet.png'
 
 export const Header: React.FC = () => {
   return (
@@ -17,10 +18,13 @@ export const Header: React.FC = () => {
 
             </ul>
           </nav>
-          <div className="header__auth auth">
-            <button className="auth__btn filled-item">log in</button>
-            <button className="auth__btn"></button>
-            <button className="auth__btn"></button>
+          <div className={styles.header__auth}>
+            <button className="menu-btn outlined withPic">
+              <img src={imgUrl}></img>
+              <span>en</span>
+              </button>
+            <button className="menu-btn outlined">log in</button>
+            <button className="menu-btn filled-item">sign up</button>
           </div>
         </header>
   )

@@ -1,0 +1,25 @@
+@import '../../styles/variables.scss';
+
+.welcome {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 9.6rem;
+  line-height: 9.6rem;
+  text-transform: uppercase;
+  margin-bottom: 2.4rem;
+}
+
+.title_blue {
+  color: $main_blue;
+  margin-top: 2.4rem;
+}
+
+.subtitle {
+  opacity: .6;
+  font-size: 3.2rem;
+}
