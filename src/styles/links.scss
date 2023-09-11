@@ -15,23 +15,23 @@
   border-radius: 50%;
   background-color: $main_blue;
   position: relative;
-  // outline: 2px dashed black;
-  // outline-offset: -4px;
+
+  &:hover {
+    background: linear-gradient(90deg, rgba(157,173,242,1) 0%, rgba(71,139,249,1) 100%);
+  }
  
   &::before {
     content: '';
     position: absolute;
-    width: 30px;
-    height: 30px;
-    top: 1px;
-    left: 1px;
+    width: 28px;
+    height: 28px;
+    top: 2px;
+    left: 2px;
     border-radius: 50%;
-    border: 2px solid;
-    background-color: aliceblue;
-    border-image: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66));
-    border-image-slice: 1;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='%23110A1DFF' stroke-width='3' stroke-dasharray='20%2c 2' stroke-dashoffset='10' stroke-linecap='butt'/%3e%3c/svg%3e");
   }
-  
+
+
 
 
   img {
