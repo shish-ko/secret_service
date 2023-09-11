@@ -15,7 +15,8 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "paths": {
-      "@comps/*": ["./src/components/*"]
+      "@comps/*": ["./src/components/*"],
+      "@assets/*": ["./src/assets/*"]
     },
     /* Linting */
     "strict": true,

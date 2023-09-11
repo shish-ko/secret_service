@@ -7,19 +7,39 @@
 }
 
 .title {
+  position: relative;
+}
+
+.title__text {
   font-weight: 500;
   font-size: 9.6rem;
   line-height: 9.6rem;
   text-transform: uppercase;
   margin-bottom: 2.4rem;
+  
+  &_blue {
+    color: $main_blue;
+    margin-top: 2.4rem;
+  }
 }
 
-.title_blue {
-  color: $main_blue;
-  margin-top: 2.4rem;
-}
+
 
 .subtitle {
   opacity: .6;
   font-size: 3.2rem;
+}
+
+.left_shine {
+  position: absolute;
+  transform: rotate(36deg);
+  top: 65px;
+  left: -502px;
+  background: linear-gradient(180deg, #478BF9 0%, rgba(71, 139, 249, 0.4) 100%);
+  width: 1302px;
+  height: 226px;
+  opacity: 0.55;
+  filter: blur(150px);
+  border-radius: 50%;
+  z-index: -1;
 }
