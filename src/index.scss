@@ -3,6 +3,7 @@
 @import './styles/btn.scss';
 @import './styles/links.scss';
 @import './components/Footer/footer.scss';
+@import './components/WelcomePage/welcomePage.module.scss';
 *{
   margin: 0;
   padding: 0;
@@ -21,10 +22,16 @@ body{
 .app-container{
   max-width: 1640px;
   margin: 0 auto; 
-}
-
-.app {
   min-height: 100vh;
   padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+main {
+  flex-grow: 1;
+  position: relative;
 }
 
