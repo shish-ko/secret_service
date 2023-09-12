@@ -85,6 +85,78 @@
 }
 
 @keyframes movingDown {
-  from {transform: translateY(-638px)}
+  from {transform: translateY(-635px)}
   to {transform: translateY(0px)}
+}
+
+// blog
+
+.blog {
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2.4rem;
+  }
+
+  &__body {
+    padding: 21px 37px 21px 21px;
+    border-radius: 100px;
+    border: 3px solid $main_blue; 
+    background: rgba(255, 255, 255, 0.12);
+    overflow-y: scroll;
+    max-height: 595px;
+    &::-webkit-scrollbar {
+      width: 8px;
+      max-height: 100px;
+    }
+    &::-webkit-scrollbar-track {
+      margin-top: 96px;
+      margin-bottom: 96px;
+      margin-right: 13px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.12);
+    }
+    &::-webkit-scrollbar-thumb {
+      background: $main_blue;
+      border-radius: 10px;
+
+    }
+    
+  }
+  
+  &__item {
+    padding: 1.6rem 6.4rem;
+    border-radius: 196px;
+    background-color: $main_deep_blue;
+    margin-bottom: 16px;
+    cursor: pointer;
+
+    &:hover {
+      background: $main_blue;
+    }
+    &:active {
+      background: lighten($color: $main_blue, $amount: 2);
+    }
+  }
+
+}
+
+.blog-record {
+  &__container {
+    max-width: 33.9rem;
+  }
+  
+  &__text {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+  }
+
+  &__date {
+    color: rgba(255, 255, 255, 0.60);
+    margin-top: 1.4rem;
+  }
+
 }
