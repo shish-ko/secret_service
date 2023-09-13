@@ -12,7 +12,7 @@ export const DefaultUI: React.FC = () => {
         <div className="app-container" >
           <Header/>
           {/* ref={ref} style={{height: `${height}px`}} */}
-          <main ref={ref} style={{height: `${height}px`}}>
+          <main >
             <Outlet/>
           </main>
           <Footer />

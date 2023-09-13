@@ -2,6 +2,8 @@ export const WelcomeBlog = () => {
   return (
     <section className="blog">
       <h2 className="blog__title">blog</h2>
+      <div className="blog__body-container">
+
       <div className="blog__body">
         <div className="blog__item blog-record">
           <div className="blog-record__container">
@@ -44,6 +46,7 @@ export const WelcomeBlog = () => {
           </div>
         </div>
 
+      </div>
       </div>
     </section>
   )
