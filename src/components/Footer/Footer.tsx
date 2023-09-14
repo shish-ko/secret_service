@@ -12,8 +12,8 @@ import vkLogo from '@assets/socials/VK.png';
 
 export const Footer: React.FC = () => {
   return (
-    // <div className='footer_container'>
-      <footer className='footer'>
+    <div className='footer_container'>
+      <footer className='footer app__container'>
         <nav>
           <ul className='footer__menu'>
             <li><Link to={'#'} className="menu-link">Terms & Conditions</Link> </li>
@@ -38,6 +38,6 @@ export const Footer: React.FC = () => {
         </div>
       </footer>
 
-    // </div>
+    </div>
   )
 }

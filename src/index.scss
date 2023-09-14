@@ -4,13 +4,16 @@
 @import './styles/links.scss';
 @import './components/Footer/footer.scss';
 @import './components/WelcomePage/welcomePage.module.scss';
+@import './components/Header/header.scss';
 *{
   margin: 0;
   padding: 0;
-  // box-sizing: border-box;
 }
 html {
   font-size: 10px;
+  @media screen and (max-width: $screen_L) {
+    font-size: 9px;
+  }
 }
 body{
   font-size: 1.6rem;
@@ -19,17 +22,24 @@ body{
   color: white;
 
 }
-.app-container{
-  max-width: 1640px;
-  margin: 0 auto; 
-  min-height: 100vh;
-  padding-top: 16px;
+.app {
   display: flex;
   flex-direction: column;
-  // justify-content: space-between;
+  min-height: 100vh;
+  
+  &__container{
+    max-width: 1640px;
+    margin: 0 auto; 
+    padding-top: 16px;
+    @media screen and (max-width: $screen_XL) {
+      max-width: 93%;
+    }
+  }
 
+  &__container_fullWidth {
+    width: 100%;
+  }  
 }
-
 main {
   flex-grow: 1;
   position: relative;

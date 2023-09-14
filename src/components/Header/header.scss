@@ -1,4 +1,3 @@
-@import '../../styles/variables.scss';
 .header {
   border: $main_blue 4px solid;
   border-radius: 64px;
@@ -11,6 +10,9 @@
 
   &__item {
     flex-basis: 287px;
+    @media screen and (max-width: $screen_XL) {
+      display: none;
+    }
   }
 }
 
