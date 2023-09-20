@@ -65,25 +65,12 @@
   left: 711px;
   height: 100%;
   overflow: hidden;
+
   @media screen and (max-width: $screen_XL) {
     left: 50%;   
     transform: translateX(-50%);
   }
-  &__container {
-    display: flex;
-  }
-  &__column {
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
-    
-    &_up {
-      animation: 7s linear movingUp infinite;
-    }
-    &_down {
-      animation: 7s linear movingDown infinite;
-    }
-  }
+  
   @media screen and (max-width: $screen_M) {
     display: none;
   }
@@ -108,9 +95,13 @@
   width: 100vw;
   top: 440px;
   overflow: hidden;
-  display: flex;
   flex-direction: column;
   gap: 9px;
+  display: none;
+  
+  @media screen and (max-width: $screen_M) {
+    display: flex;
+  }
 
   // ::before {
   //   display: block;
@@ -122,44 +113,6 @@
   //   background: linear-gradient(180deg, rgba(17, 10, 29, 1) 0%, rgba(17, 10, 29, 0.52) 12%, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0) 83%, rgba(17, 10, 29, 0.52) 88%, rgba(17, 10, 29, 1) 100%), linear-gradient(90deg, rgba(17, 10, 29, 0.72) 0%, rgba(0, 0, 0, 0) 50%, rgba(17, 10, 29, 0.72) 100%);
   //   z-index: 1;
   // }
-  &__line {
-    display: flex;
-    width: max-content;
-  }
-  &__line_left {
-    animation: 5s linear movingLeft infinite;
-  }
-  &__line_right {
-    animation: 5s linear movingRight infinite;
-  }
-}
-
-@keyframes movingLeft {
-  0% {
-    transform: translate(0)
-  }  
-  100% {
-    transform: translate(-25%);
-  }
-}
-
-@keyframes movingRight {
-  0% {
-    transform: translate(-25%)
-  }  
-  100% {
-    transform: translate(0);
-  }
-}
-
-@keyframes movingUp {
-  from {transform: translateY(0px)}
-  to {transform: translateY(-638px)}
-}
-
-@keyframes movingDown {
-  from {transform: translateY(-635px)}
-  to {transform: translateY(0px)}
 }
 
 // blog

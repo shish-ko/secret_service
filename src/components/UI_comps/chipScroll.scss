@@ -1,0 +1,57 @@
+.chipScroll {
+  &__column {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+  
+    &_up {
+      animation: 10s linear movingUp infinite;
+    }
+  
+    &_down {
+      animation: 10s linear movingDown infinite;
+    }
+  
+  }
+
+  &__row {
+    display: flex;
+    width: max-content;
+
+    &_left {
+      animation: 5s linear movingLeft infinite;
+    }
+    &_right {
+      animation: 5s linear movingRight infinite;
+    }
+  }
+
+}
+
+@keyframes movingLeft {
+  0% {
+    transform: translate(0)
+  }  
+  100% {
+    transform: translate(-25%);
+  }
+}
+
+@keyframes movingRight {
+  0% {
+    transform: translate(-25%)
+  }  
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes movingUp {
+  from {transform: translateY(0)}
+  to {transform: translateY(-25%)}
+}
+
+@keyframes movingDown {
+  from {transform: translateY(-25%)}
+  to {transform: translateY(0px)}
+}
