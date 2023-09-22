@@ -36,6 +36,9 @@ body{
     @media screen and (max-width: $screen_XL) {
       max-width: 93%;
     }
+    @media screen and (max-width: $screen_XS) {
+      padding-top: 10px;
+    }
   }
 
   &__container_fullWidth {

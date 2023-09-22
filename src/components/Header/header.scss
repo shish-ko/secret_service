@@ -14,6 +14,11 @@
       display: none;
     }
   }
+
+  @media screen and (max-width: $screen_XS) {
+    border: 2px $main_blue solid;
+    padding: 10px 14px;
+  }
 }
 
 .menu {

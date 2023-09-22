@@ -3,32 +3,35 @@
   border-top-right-radius: 64px;
   border: 2px solid $main_blue;
   border-bottom: none;
+  padding: 24px 0 24px;
+  @media screen and (max-width: $screen_XS) {
+    padding: 10px 0 20px;
+  }
 }
 
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 40px 0 24px;
-  // position: relative;
 
-  // &::before {
-  //   content: '';
-  //   display: block;
-  //   position: absolute;
-  //   width: 100vw;
-  //   left: 0;
-  //   bottom: 0;
-  //   height: 130px;
-  //   border-top-left-radius: 64px;
-  //   border-top-right-radius: 64px;
-  //   border: 2px solid $main_blue;
-  //   border-bottom: none;
-  // }
+  @media screen and (max-width: $screen_XS) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
 
   &__menu {
     display: flex;
     gap: 4rem;    
+
+    @media screen and (max-width: $screen_M) {
+      flex-direction: column;
+      gap: 2px;
+      li:first-child {
+        order: 2;
+      }
+    }
+
   }
 }
 
@@ -37,6 +40,10 @@
   &__title {
     text-align: right;
     margin-bottom: 1.4rem;
+
+    @media screen and (max-width: $screen_XS) {
+      text-align: left;
+    }
   }  
 
   &__sites {
