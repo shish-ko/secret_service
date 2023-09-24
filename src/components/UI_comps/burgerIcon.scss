@@ -1,6 +1,5 @@
 .burgerIcon {
 
-  display: none;
   flex-direction: column;
   justify-content: space-between;
   width: 24px;
@@ -39,7 +38,5 @@
     }
   }
 
-  @media screen and (max-width: $screen_M) {
-    display: flex;
-  }
+
 }

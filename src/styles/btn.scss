@@ -13,6 +13,10 @@ button {
   &.menu-btn {
     border-radius: 24px;
     padding: 1.4rem;
+
+    @media screen and (max-width: $screen_XS) {
+      padding: 8px;
+    }
   }
 
   &.outlined {
