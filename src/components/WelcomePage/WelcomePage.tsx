@@ -8,6 +8,7 @@ import { WelcomeTitle } from './WelcomeTitle';
 export const WelcomePage: React.FC = () => {
   return (
     <div className={styles.welcome}>
+      <div className={styles.left_shine} />
       <WelcomeTitle/>
       <WelcomeAnimation/>
       <WelcomeAnimationHoriz />

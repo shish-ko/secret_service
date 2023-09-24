@@ -60,15 +60,16 @@
 .left_shine {
   position: absolute;
   transform: rotate(36deg);
-  top: 65px;
-  left: -502px;
+  transform-origin: bottom left;
+  top: 0;
+  left: -23%;
   background: linear-gradient(180deg, #478BF9 0%, rgba(71, 139, 249, 0.4) 100%);
-  width: 1302px;
+  width: 80%;
   height: 226px;
   opacity: 0.55;
   filter: blur(150px);
   border-radius: 50%;
-  z-index: -1;
+  z-index: 2;
 }
 
 .chipScroll {

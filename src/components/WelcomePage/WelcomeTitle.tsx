@@ -7,7 +7,7 @@ export const WelcomeTitle = () => {
         <span className={styles.title__text_blue}>gambling</span> <br/>
       </h1>
       <h3 className={styles.subtitle}>Raise your ROI with direct advertiser</h3>  
-      <div className={styles.left_shine} />
+      {/* <div className={styles.left_shine} /> */}
       <button className='filled-item welcome-btn'>become a partner</button>
     </div>
   )
