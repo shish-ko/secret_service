@@ -13,8 +13,27 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-
+  
+  @media screen and (max-width: $screen_XS) {
+    @include header-type();
+    padding: 10px 28px;
+    margin-bottom: 0;
+    &__logIn {
+      display: none;
+    }
+    &__signUp {
+      display: none;
+    }
+    &__current-lang {
+      display: none;      
+    }
     &__lang-pic {
+      width: 19px;
+      height: 19px;
+    }
+  }
+
+  &__lang-pic {
     width: 16px;
     height: 16px;
   }
@@ -40,30 +59,13 @@
     }
 
   }
+
   &__right-burger{
     display: none;
     @media screen and (max-width: $screen_XS) {
       display: flex;
     }
 
-  }
-  @media screen and (max-width: $screen_XS) {
-    @include header-type();
-    padding: 10px 28px;
-    margin-bottom: 0;
-    &__logIn {
-      display: none;
-    }
-    &__signUp {
-      display: none;
-    }
-    &__current-lang {
-      display: none;      
-    }
-    &__lang-pic {
-      width: 19px;
-      height: 19px;
-    }
   }
 }
 
@@ -80,6 +82,7 @@
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
   }
+  
   @media screen and (max-width: $screen_XS) {
     width: 100vw;
     background: $BG_color;

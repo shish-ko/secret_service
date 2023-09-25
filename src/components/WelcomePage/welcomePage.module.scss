@@ -28,26 +28,27 @@
     margin-right: 0;
     width: 100%;
   }
-}
-
-.title__text {
-  font-weight: 500;
-  font-size: 9.6rem;
-  line-height: 9.6rem;
-  text-transform: uppercase;
-  margin-bottom: 2.4rem;
   
-  &_blue {
-    color: $main_blue;
-    margin-top: 2.4rem;
-  }
-
-  @media screen and (max-width: $screen_XS) {
-    font-size: 46px;
-    line-height: 50px;
-    margin-bottom: 12px;
+  &__text {
+    font-weight: 500;
+    font-size: 9.6rem;
+    line-height: 9.6rem;
+    text-transform: uppercase;
+    margin-bottom: 2.4rem;
+    
+    &_blue {
+      color: $main_blue;
+      margin-top: 2.4rem;
+    }
+  
+    @media screen and (max-width: $screen_XS) {
+      font-size: 46px;
+      line-height: 50px;
+      margin-bottom: 12px;
+    }
   }
 }
+
 
 .subtitle {
   opacity: .6;
@@ -59,7 +60,7 @@
   }
 }
 
-.left_shine {
+.left-shine {
   position: absolute;
   transform: rotate(36deg);
   transform-origin: bottom left;
@@ -67,14 +68,41 @@
   left: -23%;
   background: linear-gradient(180deg, #478BF9 0%, rgba(71, 139, 249, 0.4) 100%);
   width: 80%;
-  aspect-ratio: 5.76;
+  aspect-ratio: 1300/226;
   opacity: 0.55;
   filter: blur(150px);
   border-radius: 50%;
   z-index: 2;
+  @media screen and (max-width: $screen_M) {
+    filter: blur(115px);
+  }
   @media screen and (max-width: $screen_S) {
-    filter: blur(39px);
+    filter: blur(66px);
     width: 120%;
+  }
+}
+
+.right-shine {
+  z-index: 2;
+  width: 37%;
+  aspect-ratio: 1/1;
+  background: linear-gradient(256deg, #478BF9 0%, #9DADF2 100%);
+  opacity: 0.7;
+  filter: blur(325px);
+  position: absolute;
+  right: -18.5%;
+  bottom: -130px;
+  text-align: center;
+  @media screen and (max-width: $screen_M) {
+    filter: blur(233px);
+  }
+  @media screen and (max-width: $screen_S) {
+    filter: blur(125px);
+  }
+  @media screen and (max-width: $screen_XS) {
+    width: 80%;
+    right: -40%;
+    bottom: 0;
   }
 }
 
@@ -102,7 +130,6 @@
     width: 100%;
     height: 100%;
     z-index: 1;
-    // background: radial-gradient(ellipse farthest-corner at 45% 50%, rgba(17, 10, 29, 0) 0%, rgba(17, 10, 29, 1) 84.6%);
     background: linear-gradient(180deg, rgba(17, 10, 29, 1) 0%, rgba(17, 10, 29, 0.52) 12%, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0) 83%, rgba(17, 10, 29, 0.52) 88%, rgba(17, 10, 29, 1) 100%), linear-gradient(90deg, rgba(17, 10, 29, 0.72) 0%, rgba(0, 0, 0, 0) 50%, rgba(17, 10, 29, 0.72) 100%);
     @media screen and (max-width: $screen_XL) {
       background: rgba($BG_color, 0.9);
@@ -130,7 +157,7 @@
 
 .blog {
   position: relative;
-  z-index: 1;
+  z-index: 3;
 
   &__title {
     text-transform: uppercase;
@@ -191,6 +218,7 @@
   }
   
   &__item {
+    display: block;
     padding: 1.6rem 6.4rem;
     border-radius: 196px;
     background-color: $main_deep_blue;

@@ -26,14 +26,14 @@ export const Footer: React.FC = () => {
         <div className='footer__social social-media'>
           <h3 className="social-media__title">Our social media:</h3 >
           <div className='social-media__sites'>
-            <SocialItem imgUrl={twLogo} link="#"/>
-            <SocialItem imgUrl={fbLogo} link="#"/>
-            <SocialItem imgUrl={instLogo} link="#"/>
-            <SocialItem imgUrl={liLogo} link="#"/>
-            <SocialItem imgUrl={ytLogo} link="#"/>
-            <SocialItem imgUrl={ttLogo} link="#"/>
-            <SocialItem imgUrl={tgLogo} link="#"/>
-            <SocialItem imgUrl={vkLogo} link="#"/>
+            <SocialItem imgUrl={twLogo} link="#" alt="twitter logo"/>
+            <SocialItem imgUrl={fbLogo} link="#" alt="facebook logo"/>
+            <SocialItem imgUrl={instLogo} link="#" alt="inst logo"/>
+            <SocialItem imgUrl={liLogo} link="#" alt="linkedIn logo"/>
+            <SocialItem imgUrl={ytLogo} link="#" alt="youTube logo"/>
+            <SocialItem imgUrl={ttLogo} link="#" alt="twitter logo"/>
+            <SocialItem imgUrl={tgLogo} link="#" alt="telegram logo"/>
+            <SocialItem imgUrl={vkLogo} link="#" alt="vk logo"/>
           </div>
         </div>
       </footer>

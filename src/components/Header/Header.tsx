@@ -15,7 +15,7 @@ export const Header: React.FC = () => {
           <BurgerIcon menuHandler={menuHandler} className='header__left-burger'/>
           <nav className={`menu ${isMenuOpen && 'menu_open'}`}>
             <ul className="menu__list">
-              <li className="menu__item menu-link"><Link to={'/about'}>About us</Link></li>
+              <li className="menu__item menu-link"><Link to={'#'}>About us</Link></li>
               <li className="menu__item menu-link"><Link to={'#'}>Brands</Link></li>
               <li className="menu__item menu-link"><Link to={'#'}>Commissions</Link></li>
               <li className="menu__item menu-link"><Link to={'#'}>News</Link></li>
@@ -28,8 +28,12 @@ export const Header: React.FC = () => {
               <img src={imgUrl} alt='current language' className="header__lang-pic"></img>
               <span className="header__current-lang">{english ? 'en' : 'ru'}</span>
               </button>
-            <button className="menu-btn outlined header__logIn">log in</button>
-            <button className="menu-btn filled-item header__signUp">sign up</button>
+            <Link to={'#'}>
+              <button className="menu-btn outlined header__logIn">log in</button>              
+            </Link>
+            <Link to={'#'}>
+              <button className="menu-btn filled-item header__signUp">sign up</button>              
+            </Link>  
             <BurgerIcon menuHandler={menuHandler} className='header__right-burger'/>
           </div>
         </header>
