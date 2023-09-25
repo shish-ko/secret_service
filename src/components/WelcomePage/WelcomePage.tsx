@@ -11,7 +11,7 @@ export const WelcomePage: React.FC = () => {
       <div className={styles.left_shine} />
       <WelcomeTitle/>
       <WelcomeAnimation/>
-      <WelcomeAnimationHoriz />
+      {/* <WelcomeAnimationHoriz /> */}
       <WelcomeBlog/>
     </div>
   )

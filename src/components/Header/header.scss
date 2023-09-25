@@ -1,6 +1,5 @@
 @mixin header-type {
   border: 2px $main_blue solid;
-  padding: 10px 14px;
   border-radius: 64px;
 }
 
@@ -19,9 +18,6 @@
     width: 16px;
     height: 16px;
   }
-  // .burgerIcon {
-  //   display: none;
-  // }
 
   &__item {
     flex-basis: 287px;
@@ -53,7 +49,8 @@
   }
   @media screen and (max-width: $screen_XS) {
     @include header-type();
-
+    padding: 10px 28px;
+    margin-bottom: 0;
     &__logIn {
       display: none;
     }
@@ -86,8 +83,8 @@
   @media screen and (max-width: $screen_XS) {
     width: 100vw;
     background: $BG_color;
-    padding: 30px 3.5%;
-    left: calc(-100vw * 0.035)
+    padding: 30px calc($appContainerPadding * 100%) ;
+    left: calc(-100vw * $appContainerPadding)
   }
   
   &__list {
@@ -107,6 +104,9 @@
   &__item {
     @media screen and (max-width: $screen_XS) {
       @include header-type();
+      font-size: 18px;
+      line-height: 24px;
+      padding: 13px 20px;
     }
   }
   

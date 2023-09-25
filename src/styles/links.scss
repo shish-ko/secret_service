@@ -31,6 +31,20 @@
     background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='%23110A1DFF' stroke-width='3' stroke-dasharray='20%2c 2' stroke-dashoffset='10' stroke-linecap='butt'/%3e%3c/svg%3e");
   }
 
+  @media screen and (max-width: $screen_XS) {
+    width: 27px;
+    height: 27px;
+
+    &::before {
+      content: '';
+      width: 25px;
+      top: 1px;
+      left: 1px;
+      height: 25px;
+      background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='%23201637FF' stroke-width='2' stroke-dasharray='17%2c 2' stroke-dashoffset='84' stroke-linecap='butt'/%3e%3c/svg%3e");
+    }
+  }
+
 
 
 

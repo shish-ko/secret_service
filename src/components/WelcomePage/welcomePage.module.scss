@@ -25,6 +25,8 @@
   @media screen and (max-width: $screen_M) {
     text-align: center;
     margin-bottom: 230px;
+    margin-right: 0;
+    width: 100%;
   }
 }
 
@@ -65,11 +67,15 @@
   left: -23%;
   background: linear-gradient(180deg, #478BF9 0%, rgba(71, 139, 249, 0.4) 100%);
   width: 80%;
-  height: 226px;
+  aspect-ratio: 5.76;
   opacity: 0.55;
   filter: blur(150px);
   border-radius: 50%;
   z-index: 2;
+  @media screen and (max-width: $screen_S) {
+    filter: blur(39px);
+    width: 120%;
+  }
 }
 
 .chipScroll {
@@ -108,7 +114,8 @@
   position: absolute;
   height: 170px;
   width: 100vw;
-  top: 440px;
+  top: calc(100% + 30px);
+  left: -3.5%;
   overflow: hidden;
   flex-direction: column;
   gap: 9px;

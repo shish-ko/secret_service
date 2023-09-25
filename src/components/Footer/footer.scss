@@ -18,6 +18,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
+    padding: 10px;
   }
 
   &__menu {
@@ -49,5 +50,6 @@
   &__sites {
     display: flex;
     gap: .8rem;
+    flex-wrap: wrap ;
   }
 }
